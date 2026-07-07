@@ -1,0 +1,159 @@
+:root {
+  --bg: #0b0e14;
+  --panel: #11151d;
+  --border: #232936;
+  --text: #d7dde5;
+  --text-dim: #7b8494;
+  --accent: #4d9dff;
+  --up: #3ecf6e;
+  --down: #f24444;
+  --pending: #6b7280;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+h1 {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px;
+}
+
+h1::before {
+  content: "● ";
+  color: var(--up);
+}
+
+.add-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+}
+
+.add-form input::placeholder {
+  color: var(--text-dim);
+}
+
+.add-form input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.add-form button {
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--accent);
+  color: #06101f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error {
+  color: var(--down);
+  font-size: 13px;
+}
+
+.empty {
+  color: var(--text-dim);
+  font-size: 13px;
+  padding: 16px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+  color: var(--text-dim);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+
+td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.badge.up {
+  color: var(--up);
+}
+.badge.up::before {
+  background: var(--up);
+  box-shadow: 0 0 6px var(--up);
+}
+
+.badge.down {
+  color: var(--down);
+}
+.badge.down::before {
+  background: var(--down);
+}
+
+.badge.pending {
+  color: var(--pending);
+}
+.badge.pending::before {
+  background: var(--pending);
+}
+
+td button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+td button:hover {
+  border-color: var(--down);
+  color: var(--down);
+}
