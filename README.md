@@ -6,9 +6,10 @@ Full-stack MVP that registers URLs, pings each on an interval, and shows live up
 - `/frontend` — React (Vite). Polls the backend every 5s, shows a table of monitors with status, latency, last-checked time.
 - `docker-compose.yml` — orchestrates both.
 - `AI_LOG.md` / `prompts.md` — the AI collaboration record (raw prompts + course-corrections, and the cleaned-up phase-wise build recipe).
+------------------------------------------------------------------------------------------------
 
 ![Uptime Monitor dashboard](img.png)
-
+------------------------------------------------------------------------------------------------
 ## 1-Line Setup
 
 ```
