@@ -7,6 +7,8 @@ Full-stack MVP that registers URLs, pings each on an interval, and shows live up
 - `docker-compose.yml` — orchestrates both.
 - `AI_LOG.md` / `prompts.md` — the AI collaboration record (raw prompts + course-corrections, and the cleaned-up phase-wise build recipe).
 
+![Uptime Monitor dashboard](img.png)
+
 ## 1-Line Setup
 
 ```
